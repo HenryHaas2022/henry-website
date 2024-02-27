@@ -1,0 +1,40 @@
+
+  .first_header{
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 15px;
+    font-family: Roboto;
+    margin-bottom: none;
+  }
+  .first_description{
+    font-weight: normal;
+    font-size: 25px;
+    font-family: Roboto;
+    text-align: center;
+    margin-top: none;
+  
+  }
+  .first_buttons {
+    color: rgb(45, 44, 70);  
+    background-color: rgb(150, 146, 255);
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      border-radius: 17px;
+      border: none;
+      cursor: pointer;
+      margin-left: 5px;
+    margin-right: auto;
+    transition: all 0.15s;
+    
+    }
+    .first_buttons:hover{
+      opacity: 0.8;
+    box-shadow: 5px 5px 5px gray;
+    }
+    .first_buttons:active{
+      opacity: 0.6;
+    }
+    

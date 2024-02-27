@@ -1,0 +1,16 @@
+.first_header{
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 15px;
+    font-family: monospace;
+    margin-bottom: none;
+  }
+  .first_description{
+    font-weight: normal;
+    font-size: 25px;
+    font-family: Roboto;
+    text-align: center;
+    margin-top: none;
+  
+  }

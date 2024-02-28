@@ -18,18 +18,41 @@
     <p class="first_description">
         Persönliche Webseite, Student der Elektrotechnik aus Ulm, 20 Jahre alt
     </p>
-    <button class="first_buttons" style="float: right;">
+    <button id="RedirectToCV" class="first_buttons" style="float: right;">
         CV
     </button>
-    <button class="first_buttons" style="float: right;">
+    <script>
+        document.getElementById('RedirectToCV').addEventListener('click', function(){
+            window.location.href = 'sites/cv.html';
+        });
+    </script>
+    <button id="RedirectToMathematik" class="first_buttons" style="float: right;">
         Mathematik
     </button> 
-    <button class="first_buttons" style="float: right;">
+    <script>
+        document.getElementById('RedirectToMathematik').addEventListener('click', function(){
+            window.location.href = 'sites/mathematik.html';
+        });
+    </script>
+    
+    <button id="RedirectToElektrotechnik" class="first_buttons" style="float: right;">
         Elektrotechnik
     </button>
-    <button class="first_buttons" style="float: right;">
+    <script>
+        document.getElementById('RedirectToElektrotechnik').addEventListener('click', function(){
+            window.location.href = 'sites/elektrotechnik.html';
+        });
+    </script>
+    
+    <button id="RedirectToInteressante_Links" class="first_buttons" style="float: right;">
         interessante Links
     </button>
+    <script>
+        document.getElementById('RedirectToInteressante_Links').addEventListener('click', function(){
+            window.location.href = 'sites/interessante_links.html';
+        });
+    </script>
+    
     
  
 

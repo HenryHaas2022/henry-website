@@ -1,61 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>
-        Henry´s Page
-    </title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry's Page</title>
     <link rel="stylesheet" href="styles/buttons.css">
     <link rel="stylesheet" href="styles/general.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
 
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.35s;
+        }
+        .container:hover{
+            padding: 100px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .first_header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .first_description {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .first_buttons {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, transform 0.2s;
+        }
+
+        .first_buttons:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 
-<body style="background-color: rgb(196, 205, 205);">
-    <p class="first_header">
-        Henry Haas
-    </p>
-    <p class="first_description">
-        Persönliche Webseite, Student der Elektrotechnik aus Ulm, 20 Jahre alt
-    </p>
-    <button id="RedirectToCV" class="first_buttons" style="float: right;">
-        CV
-    </button>
+<body>
+    <div class="container">
+        <p class="first_header">Henry Haas</p>
+        <p class="first_description">Persönliche Webseite, Student der Elektrotechnik aus Ulm, 20 Jahre alt</p>
+        <div class="button-container">
+            <button id="RedirectToCV" class="first_buttons">CV</button>
+            <button id="RedirectToMathematik" class="first_buttons">Mathematik</button>
+            <button id="RedirectToElektrotechnik" class="first_buttons">Elektrotechnik</button>
+            <button id="RedirectToInteressante_Links" class="first_buttons">Interessante Links</button>
+        </div>
+    </div>
+
     <script>
-        document.getElementById('RedirectToCV').addEventListener('click', function(){
+        document.getElementById('RedirectToCV').addEventListener('click', function() {
             window.location.href = 'sites/cv.html';
         });
-    </script>
-    <button id="RedirectToMathematik" class="first_buttons" style="float: right;">
-        Mathematik
-    </button> 
-    <script>
-        document.getElementById('RedirectToMathematik').addEventListener('click', function(){
+
+        document.getElementById('RedirectToMathematik').addEventListener('click', function() {
             window.location.href = 'sites/mathematik.html';
         });
-    </script>
-    
-    <button id="RedirectToElektrotechnik" class="first_buttons" style="float: right;">
-        Elektrotechnik
-    </button>
-    <script>
-        document.getElementById('RedirectToElektrotechnik').addEventListener('click', function(){
+
+        document.getElementById('RedirectToElektrotechnik').addEventListener('click', function() {
             window.location.href = 'sites/elektrotechnik.html';
         });
-    </script>
-    
-    <button id="RedirectToInteressante_Links" class="first_buttons" style="float: right;">
-        interessante Links
-    </button>
-    <script>
-        document.getElementById('RedirectToInteressante_Links').addEventListener('click', function(){
+
+        document.getElementById('RedirectToInteressante_Links').addEventListener('click', function() {
             window.location.href = 'sites/interessante_links.html';
         });
     </script>
-    
-    
- 
-
 </body>
 
 </html>

@@ -1,16 +1,16 @@
-.first_header{
-    font-size: 50px;
-    font-weight: normal;
+.first_header {
+    font-size: 36px;
+    font-weight: bold;
     text-align: center;
     margin-top: 15px;
-    font-family: monospace;
-    margin-bottom: none;
-  }
-  .first_description{
+    font-family: Arial, sans-serif;
+    margin-bottom: 0;
+}
+
+.first_description {
     font-weight: normal;
-    font-size: 25px;
-    font-family: monospace;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: none;
-  
-  }
+    margin-top: 0;
+}

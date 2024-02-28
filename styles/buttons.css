@@ -1,25 +1,24 @@
+.first_buttons {
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
 
-  
-  .first_buttons {
-    color: rgb(45, 44, 70);  
-    background-color: rgb(150, 146, 255);
-      padding-left: 5px;
-      padding-right: 5px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      border-radius: 17px;
-      border: none;
-      cursor: pointer;
-      margin-left: 5px;
-    margin-right: auto;
-    transition: all 0.15s;
-    
-    }
-    .first_buttons:hover{
-      opacity: 0.8;
-    box-shadow: 5px 5px 5px gray;
-    }
-    .first_buttons:active{
-      opacity: 0.6;
-    }
-    
+.first_buttons:hover {
+  background-color: #45a049;
+  color: #fff;
+}
+
+.first_buttons:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}

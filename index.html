@@ -31,7 +31,6 @@
         }
         .container:hover{
             padding: 100px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
 
         .first_header {
@@ -67,6 +66,16 @@
         .first_buttons:hover {
             background-color: #45a049;
         }
+    
+        .imprint{
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            color: black;
+        }
+
     </style>
 </head>
 
@@ -75,11 +84,16 @@
         <p class="first_header">Henry Haas</p>
         <p class="first_description">Persönliche Webseite, Student der Elektrotechnik aus Ulm, 20 Jahre alt</p>
         <div class="button-container">
-            <button id="RedirectToCV" class="first_buttons">CV</button>
+            <button id="RedirectToCV" class="first_buttons">Kontakt</button>
             <button id="RedirectToMathematik" class="first_buttons">Mathematik</button>
             <button id="RedirectToElektrotechnik" class="first_buttons">Elektrotechnik</button>
-            <button id="RedirectToInteressante_Links" class="first_buttons">Interessante Links</button>
+            
         </div>
+    </div>
+
+    <div class="imprint">
+        Henry Haas, 2024
+
     </div>
 
     <script>

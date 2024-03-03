@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Slider</title>
+    <style>
+        /* Optional: Custom styling for the volume slider */
+        #volumeSlider {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <label for="volumeSlider">Volume:</label>
+    <input type="range" id="volumeSlider" min="0" max="100" value="50" onchange="changeVolume()">
+    <span id="volumeValue">50</span>
+
+    <script>
+        function changeVolume() {
+            // Get the volume slider element
+            var volumeSlider = document.getElementById("volumeSlider");
+            // Get the volume value
+            var volume = volumeSlider.value;
+            // Update the volume value display
+            document.getElementById("volumeValue").innerText = volume;
+
+            // You can use this volume value to control audio or video volume, or any other volume-related functionality.
+            // For example:
+            // document.getElementById("myAudio").volume = volume / 100;
+        }
+    </script>
+</body>
+</html>
